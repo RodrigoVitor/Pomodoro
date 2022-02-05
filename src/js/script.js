@@ -8,13 +8,13 @@ function start(value) {
     if(value === "pomodoro") {
         tmp = setInterval(() => {
             //start second
-            s++
+            s--
             if( s < 10) {
                 s = '0' + s
             }
             //start minute
-            if(s > 60) {
-                s = '00'
+            if(s == 00) {
+                s = '60'
                 m--
                 if(m < 10) {
                     m = '0' + m
@@ -22,24 +22,25 @@ function start(value) {
             }
             //pause timer
             if(m == 00) {
+                s = "00"
                 clearInterval(tmp)
             }
 
             second.innerHTML = s
             minutes.innerHTML = m
-        }, 1000)
+        }, 1)
     }
 
     if(value === "short") {
         tmp = setInterval(() => {
             //start second
-            s++
+            s--
             if( s < 10) {
                 s = '0' + s
             }
             //start minute
-            if(s > 60) {
-                s = '00'
+            if(s == 00) {
+                s = '60'
                 m--
                 if(m < 10) {
                     m = '0' + m
@@ -47,24 +48,25 @@ function start(value) {
             }
             //pause timer
             if(m == 00) {
+                s = "00"
                 clearInterval(tmp)
             }
 
             second.innerHTML = s
             minutes.innerHTML = m
-        }, 1000)
+        }, 1)
     } 
 
     if(value === "long") {
         tmp = setInterval(() => {
             //start second
-            s++
+            s--
             if( s < 10) {
                 s = '0' + s
             }
             //start minute
-            if(s > 60) {
-                s = '00'
+            if(s == 00) {
+                s = '60'
                 m--
                 if(m < 10) {
                     m = '0' + m
@@ -72,12 +74,13 @@ function start(value) {
             }
             //pause timer
             if(m == 00) {
+                s = '00'
                 clearInterval(tmp)
             }
 
             second.innerHTML = s
             minutes.innerHTML = m
-        }, 1000)}
+        }, 1)}
 }
 
 function pause() {
@@ -88,7 +91,7 @@ function reset(value) {
     if (value === "pomodoro") {
         clearInterval(tmp)
         m = "25"
-        s = "00"
+        s = "60"
         minutes.innerHTML = m
         second.innerHTML = s
     }
@@ -96,7 +99,7 @@ function reset(value) {
     if (value === "short") {
         clearInterval(tmp)
         m = "05"
-        s = "00"
+        s = "60"
         minutes.innerHTML = m
         second.innerHTML = s
     }
@@ -104,7 +107,7 @@ function reset(value) {
     if (value === "long") {
         clearInterval(tmp)
         m = "10"
-        s = "00"
+        s = "60"
         minutes.innerHTML = m
         second.innerHTML = s
     }
@@ -115,17 +118,20 @@ function reset(value) {
 function onLoad(value) {
     if (value === "pomodoro") {
         m = "25"
+        s = "60"
         minutes.innerHTML = m
         second.innerHTML = s
     }
     if (value === "short") {
         m = "05"
+        s = "60"
         minutes.innerHTML = m
         second.innerHTML = s
     }
 
     if (value === "long") {
         m = "10"
+        s = "60"
         minutes.innerHTML = m
         second.innerHTML = s
     }

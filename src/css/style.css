@@ -30,8 +30,11 @@
 }
 
 #timer {
-    width:230px;
+    width:350px;
+    text-align:center;
     display:flex;
+    justify-content: center;
+    align-items: center;
     margin: 70px auto;
     border-radius:100px;
     padding: 20px 0 10px 20px;
@@ -39,10 +42,13 @@
     box-shadow: inset 0 0 1em gold, 0 0 1em red;
     color:#fff
 }
-#timer span {
-    margin:0 30px;
+#timer p span {
+    margin:10px 30px;
     font-size:50px;
 
+}
+#timer > span {
+    font-size:1rem
 }
 #timer div p {
     font-size:50px;
