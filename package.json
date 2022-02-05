@@ -1,0 +1,14 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "Gestão de tempo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Rodrigo Vitor",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^17.0.0"
+  }
+}
