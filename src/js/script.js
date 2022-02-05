@@ -27,7 +27,7 @@ function start(value) {
 
             second.innerHTML = s
             minutes.innerHTML = m
-        }, 1)
+        }, 1000)
     }
 
     if(value === "short") {
@@ -52,7 +52,7 @@ function start(value) {
 
             second.innerHTML = s
             minutes.innerHTML = m
-        }, 1)
+        }, 1000)
     } 
 
     if(value === "long") {
@@ -77,7 +77,7 @@ function start(value) {
 
             second.innerHTML = s
             minutes.innerHTML = m
-        }, 1)}
+        }, 1000)}
 }
 
 function pause() {
