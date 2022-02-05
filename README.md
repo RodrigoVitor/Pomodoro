@@ -1,7 +1,7 @@
 # POMODORO
  ### Sobre
  * Aplicação criado para testar minhas habilidades
- * Pomodoro nada mais é do que um método de gestão de tempo, no qual a cada 25 minutos voce faz uma pausa na tarefa que esteja fazendo. A pausa dura em torno de 5 minuto. Após fazer esse processo 4 vezes, você da uma pausa mais longo de 10 minutos, lembrando, você escolhe quantas vezes fazer esse precosso de intervalo.
+ * Pomodoro nada mais é do que um método de gestão de tempo, no qual a cada 25 minutos você faz uma pausa na tarefa que esteja executando. A pausa dura em torno de 5 minutos. Após fazer esse processo 4 vezes, você da uma pausa mais longo de 10 minutos, lembrando, você escolhe quantas vezes fazer esse precosso de intervalo.
  
 ### Tecnologias utilizadas
 * [Electron](https://www.electronjs.org/)
